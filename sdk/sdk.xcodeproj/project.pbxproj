@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2306C67C2B10BD72009C25DF /* WaitStatusRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2306C67B2B10BD72009C25DF /* WaitStatusRequest.swift */; };
+		2329C35C2E390E7800E01247 /* PaymentMethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2329C35B2E390E7100E01247 /* PaymentMethodType.swift */; };
+		234A328F2C33E80C00CF40CE /* SbpLinkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234A328E2C33E80C00CF40CE /* SbpLinkRequest.swift */; };
+		23601A162DD1B58E0099A8CB /* SbpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23601A152DD1B58E0099A8CB /* SbpData.swift */; };
+		2377BFCB2BF2061A0047C643 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 2377BFCA2BF2061A0047C643 /* PrivacyInfo.xcprivacy */; };
+		23A32A532C340079008BA792 /* AltPayDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A32A522C340079008BA792 /* AltPayDataResponse.swift */; };
+		23B404A22F000001004546C9 /* IntentApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B404A12F000001004546C9 /* IntentApiService.swift */; };
+		23CD59712C33F4AE00D6A94D /* CaseOfBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD59702C33F4AE00D6A94D /* CaseOfBank.swift */; };
+		23CD59732C33F4CC00D6A94D /* ExternalPaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD59722C33F4CC00D6A94D /* ExternalPaymentMethod.swift */; };
+		23CD59752C33F4E000D6A94D /* Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD59742C33F4E000D6A94D /* Features.swift */; };
+		23CD59812C33F90000D6A94D /* IntentWaitStatusResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD59802C33F90000D6A94D /* IntentWaitStatusResult.swift */; };
+		23DC1E8F2E79F6E400B9C8EC /* IntentPatchByIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DC1E8E2E79F6E100B9C8EC /* IntentPatchByIdRequest.swift */; };
+		23F3BA162B70DCB200935F15 /* BinInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F3BA152B70DCB200935F15 /* BinInfoRequest.swift */; };
+		23FF6B702DBFA6000056E5FF /* PollingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF6B6F2DBFA5F50056E5FF /* PollingService.swift */; };
+		8341E46F268E65EE007561FF /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341E43F268E65ED007561FF /* Card.swift */; };
+		8341E475268E65EE007561FF /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341E448268E65ED007561FF /* String+Extensions.swift */; };
+		8341E479268E65EE007561FF /* Bundle+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341E44C268E65ED007561FF /* Bundle+Extenstions.swift */; };
+		8341E47A268E65EE007561FF /* RSAUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341E44D268E65ED007561FF /* RSAUtils.swift */; };
+		8341E47C268E65EE007561FF /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341E450268E65ED007561FF /* BaseRequest.swift */; };
+		8341E47E268E65EE007561FF /* PostThreeDsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341E452268E65ED007561FF /* PostThreeDsRequest.swift */; };
+		8341E480268E65EE007561FF /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341E455268E65ED007561FF /* Currency.swift */; };
+		8341E481268E65EE007561FF /* BankInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341E456268E65ED007561FF /* BankInfoResponse.swift */; };
+		8341E482268E65EE007561FF /* BankInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341E457268E65ED007561FF /* BankInfo.swift */; };
+		8341E483268E65EE007561FF /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341E458268E65ED007561FF /* Transaction.swift */; };
+		8341E485268E65EE007561FF /* YourpaymentsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341E45A268E65ED007561FF /* YourpaymentsApi.swift */; };
+		8341E486268E65EE007561FF /* BankInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341E45B268E65ED007561FF /* BankInfoRequest.swift */; };
+		8341E487268E65EE007561FF /* PaymentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341E45E268E65ED007561FF /* PaymentData.swift */; };
+		8341E488268E65EE007561FF /* PaymentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341E45F268E65ED007561FF /* PaymentDelegate.swift */; };
+		8341E489268E65EE007561FF /* PaymentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341E460268E65ED007561FF /* PaymentConfiguration.swift */; };
+		2FD000012F91000100F10001 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD000142F91000100F10001 /* ApiConstants.swift */; };
+		B1F117392938868B00DBBCC3 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F117382938868B00DBBCC3 /* ApiError.swift */; };
+		B1F1173B2F00000100DBBCC3 /* YourpaymentsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1173A2F00000100DBBCC3 /* YourpaymentsError.swift */; };
+		C0DE10012F92000100ABCDEF /* YPModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE10022F92000100ABCDEF /* YPModels.swift */; };
+		C0DE10032F92000100ABCDEF /* YPAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE10042F92000100ABCDEF /* YPAPIClient.swift */; };
+		C0DE10052F92000100ABCDEF /* YPCryptogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE10062F92000100ABCDEF /* YPCryptogram.swift */; };
+		C0DE10072F92000100ABCDEF /* YPAltPayFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE10082F92000100ABCDEF /* YPAltPayFlow.swift */; };
+		C0DE100A2F92000100ABCDEF /* PaymentIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE100B2F92000100ABCDEF /* PaymentIntent.swift */; };
+		C0DE00012F90000100ABCDEF /* SwiftUI+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00022F90000100ABCDEF /* SwiftUI+Assets.swift */; };
+		C0DE00032F90000100ABCDEF /* YourpaymentsRemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00042F90000100ABCDEF /* YourpaymentsRemoteImage.swift */; };
+		E817C0F42A79186200D4A1C3 /* PublicKeyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817C0F32A79186200D4A1C3 /* PublicKeyResponse.swift */; };
+		E817C0F62F00000100D4A1C3 /* IntentApiPublicKeyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817C0F52F00000100D4A1C3 /* IntentApiPublicKeyResponse.swift */; };
+		E817C0F82F00000100D4A1C3 /* IntentApiIntentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817C0F72F00000100D4A1C3 /* IntentApiIntentResponse.swift */; };
+		E817C0FA2F00000100D4A1C3 /* IntentApiPayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817C0F92F00000100D4A1C3 /* IntentApiPayResponse.swift */; };
+		E82ECBE32A790470001BD54C /* PublicKey.txt in Resources */ = {isa = PBXBuildFile; fileRef = E82ECBE02A79046F001BD54C /* PublicKey.txt */; };
+		E82ECC0E2A790D54001BD54C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E82ECC0D2A790D54001BD54C /* Assets.xcassets */; };
+		E86277A02AB1B2C4003F6C59 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E862779F2AB1B2C4003F6C59 /* CGFloat+Extensions.swift */; };
+		E8C4B91C2A79253B00DB7692 /* RecurrentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C4B91B2A79253B00DB7692 /* RecurrentModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		134298D52339F6A7009C744C /* sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		134298D92339F6A7009C744C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2306C67B2B10BD72009C25DF /* WaitStatusRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitStatusRequest.swift; sourceTree = "<group>"; };
+		2329C35B2E390E7100E01247 /* PaymentMethodType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodType.swift; sourceTree = "<group>"; };
+		234A328E2C33E80C00CF40CE /* SbpLinkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbpLinkRequest.swift; sourceTree = "<group>"; };
+		23601A152DD1B58E0099A8CB /* SbpData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbpData.swift; sourceTree = "<group>"; };
+		2377BFCA2BF2061A0047C643 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		23A32A522C340079008BA792 /* AltPayDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AltPayDataResponse.swift; sourceTree = "<group>"; };
+		23B404A12F000001004546C9 /* IntentApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentApiService.swift; sourceTree = "<group>"; };
+		23CD59702C33F4AE00D6A94D /* CaseOfBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseOfBank.swift; sourceTree = "<group>"; };
+		23CD59722C33F4CC00D6A94D /* ExternalPaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalPaymentMethod.swift; sourceTree = "<group>"; };
+		23CD59742C33F4E000D6A94D /* Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features.swift; sourceTree = "<group>"; };
+		23CD59802C33F90000D6A94D /* IntentWaitStatusResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentWaitStatusResult.swift; sourceTree = "<group>"; };
+		23DC1E8E2E79F6E100B9C8EC /* IntentPatchByIdRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentPatchByIdRequest.swift; sourceTree = "<group>"; };
+		23F3BA152B70DCB200935F15 /* BinInfoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinInfoRequest.swift; sourceTree = "<group>"; };
+		23FF6B6F2DBFA5F50056E5FF /* PollingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollingService.swift; sourceTree = "<group>"; };
+		8341E43F268E65ED007561FF /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		8341E448268E65ED007561FF /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		8341E44C268E65ED007561FF /* Bundle+Extenstions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extenstions.swift"; sourceTree = "<group>"; };
+		8341E44D268E65ED007561FF /* RSAUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSAUtils.swift; sourceTree = "<group>"; };
+		8341E450268E65ED007561FF /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		8341E452268E65ED007561FF /* PostThreeDsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostThreeDsRequest.swift; sourceTree = "<group>"; };
+		8341E455268E65ED007561FF /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		8341E456268E65ED007561FF /* BankInfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankInfoResponse.swift; sourceTree = "<group>"; };
+		8341E457268E65ED007561FF /* BankInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankInfo.swift; sourceTree = "<group>"; };
+		8341E458268E65ED007561FF /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		8341E45A268E65ED007561FF /* YourpaymentsApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourpaymentsApi.swift; sourceTree = "<group>"; };
+		8341E45B268E65ED007561FF /* BankInfoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankInfoRequest.swift; sourceTree = "<group>"; };
+		8341E45E268E65ED007561FF /* PaymentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentData.swift; sourceTree = "<group>"; };
+		8341E45F268E65ED007561FF /* PaymentDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentDelegate.swift; sourceTree = "<group>"; };
+		8341E460268E65ED007561FF /* PaymentConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentConfiguration.swift; sourceTree = "<group>"; };
+		2FD000142F91000100F10001 /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		83507D332525DF3700637BB6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		83507D352525DF3C00637BB6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		83507D372525DF4300637BB6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		83507D392525DF4D00637BB6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		83507D3B2525DF5300637BB6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/iOSSupport/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		83507D3F2525DFDD00637BB6 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		B1F117382938868B00DBBCC3 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		B1F1173A2F00000100DBBCC3 /* YourpaymentsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourpaymentsError.swift; sourceTree = "<group>"; };
+		C0DE10022F92000100ABCDEF /* YPModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPModels.swift; sourceTree = "<group>"; };
+		C0DE10042F92000100ABCDEF /* YPAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPAPIClient.swift; sourceTree = "<group>"; };
+		C0DE10062F92000100ABCDEF /* YPCryptogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPCryptogram.swift; sourceTree = "<group>"; };
+		C0DE10082F92000100ABCDEF /* YPAltPayFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPAltPayFlow.swift; sourceTree = "<group>"; };
+		C0DE100B2F92000100ABCDEF /* PaymentIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentIntent.swift; sourceTree = "<group>"; };
+		C0DE00022F90000100ABCDEF /* SwiftUI+Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+Assets.swift"; sourceTree = "<group>"; };
+		C0DE00042F90000100ABCDEF /* YourpaymentsRemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YourpaymentsRemoteImage.swift"; sourceTree = "<group>"; };
+		E817C0F32A79186200D4A1C3 /* PublicKeyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicKeyResponse.swift; sourceTree = "<group>"; };
+		E817C0F52F00000100D4A1C3 /* IntentApiPublicKeyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntentApiPublicKeyResponse.swift; sourceTree = "<group>"; };
+		E817C0F72F00000100D4A1C3 /* IntentApiIntentResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntentApiIntentResponse.swift; sourceTree = "<group>"; };
+		E817C0F92F00000100D4A1C3 /* IntentApiPayResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntentApiPayResponse.swift; sourceTree = "<group>"; };
+		E82ECBE02A79046F001BD54C /* PublicKey.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PublicKey.txt; sourceTree = "<group>"; };
+		E82ECC0D2A790D54001BD54C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E862779F2AB1B2C4003F6C59 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		E8C4B91B2A79253B00DB7692 /* RecurrentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecurrentModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		134298D22339F6A7009C744C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		134298CB2339F6A7009C744C = {
+			isa = PBXGroup;
+			children = (
+				2377BFCA2BF2061A0047C643 /* PrivacyInfo.xcprivacy */,
+				134298D72339F6A7009C744C /* Sources */,
+				E82ECBDF2A79046F001BD54C /* Resources */,
+				134298D62339F6A7009C744C /* Products */,
+				ACB27EC35C80F9D1EB2A0DD8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		134298D62339F6A7009C744C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				134298D52339F6A7009C744C /* sdk.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		134298D72339F6A7009C744C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE10092F92000100ABCDEF /* YP */,
+				8341E44E268E65ED007561FF /* api */,
+				8341E45C268E65ED007561FF /* PaymentForm */,
+				8341E440268E65ED007561FF /* Utils */,
+				134298D92339F6A7009C744C /* Info.plist */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2329C3542E390C6E00E01247 /* PaymentOptionsModule */ = {
+			isa = PBXGroup;
+			children = (
+				2329C35B2E390E7100E01247 /* PaymentMethodType.swift */,
+			);
+			path = PaymentOptionsModule;
+			sourceTree = "<group>";
+		};
+		23CD597C2C33F7A100D6A94D /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				23B404A12F000001004546C9 /* IntentApiService.swift */,
+				23DC1E8E2E79F6E100B9C8EC /* IntentPatchByIdRequest.swift */,
+				23FF6B6F2DBFA5F50056E5FF /* PollingService.swift */,
+				8341E450268E65ED007561FF /* BaseRequest.swift */,
+				8341E452268E65ED007561FF /* PostThreeDsRequest.swift */,
+				234A328E2C33E80C00CF40CE /* SbpLinkRequest.swift */,
+				8341E45A268E65ED007561FF /* YourpaymentsApi.swift */,
+				8341E45B268E65ED007561FF /* BankInfoRequest.swift */,
+				2306C67B2B10BD72009C25DF /* WaitStatusRequest.swift */,
+				23F3BA152B70DCB200935F15 /* BinInfoRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		23CD597D2C33F7FE00D6A94D /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				23A32A522C340079008BA792 /* AltPayDataResponse.swift */,
+				E817C0F72F00000100D4A1C3 /* IntentApiIntentResponse.swift */,
+				E817C0F92F00000100D4A1C3 /* IntentApiPayResponse.swift */,
+				E817C0F52F00000100D4A1C3 /* IntentApiPublicKeyResponse.swift */,
+				8341E456268E65ED007561FF /* BankInfoResponse.swift */,
+				E817C0F32A79186200D4A1C3 /* PublicKeyResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		23DC1E902E79F77900B9C8EC /* PaymentCardFormModule */ = {
+			isa = PBXGroup;
+			children = (
+				8341E43E268E65ED007561FF /* Card */,
+			);
+			path = PaymentCardFormModule;
+			sourceTree = "<group>";
+		};
+		8341E43E268E65ED007561FF /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				8341E43F268E65ED007561FF /* Card.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		8341E440268E65ED007561FF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8341E445268E65ED007561FF /* Extenstions */,
+				C0DE00052F90000100ABCDEF /* SwiftUI */,
+				8341E44D268E65ED007561FF /* RSAUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8341E445268E65ED007561FF /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				8341E448268E65ED007561FF /* String+Extensions.swift */,
+				8341E44C268E65ED007561FF /* Bundle+Extenstions.swift */,
+				E862779F2AB1B2C4003F6C59 /* CGFloat+Extensions.swift */,
+				C0DE00022F90000100ABCDEF /* SwiftUI+Assets.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		C0DE00052F90000100ABCDEF /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE00042F90000100ABCDEF /* YourpaymentsRemoteImage.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		C0DE10092F92000100ABCDEF /* YP */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE10022F92000100ABCDEF /* YPModels.swift */,
+				C0DE10042F92000100ABCDEF /* YPAPIClient.swift */,
+				C0DE10062F92000100ABCDEF /* YPCryptogram.swift */,
+				C0DE10082F92000100ABCDEF /* YPAltPayFlow.swift */,
+				C0DE100B2F92000100ABCDEF /* PaymentIntent.swift */,
+			);
+			path = YP;
+			sourceTree = "<group>";
+		};
+		8341E44E268E65ED007561FF /* api */ = {
+			isa = PBXGroup;
+			children = (
+				2FD000142F91000100F10001 /* ApiConstants.swift */,
+				8341E453268E65ED007561FF /* Models */,
+				23CD597C2C33F7A100D6A94D /* Requests */,
+				23CD597D2C33F7FE00D6A94D /* Responses */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		8341E453268E65ED007561FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23601A152DD1B58E0099A8CB /* SbpData.swift */,
+				E8C4B91B2A79253B00DB7692 /* RecurrentModel.swift */,
+				8341E455268E65ED007561FF /* Currency.swift */,
+				8341E457268E65ED007561FF /* BankInfo.swift */,
+				8341E458268E65ED007561FF /* Transaction.swift */,
+				B1F117382938868B00DBBCC3 /* ApiError.swift */,
+				B1F1173A2F00000100DBBCC3 /* YourpaymentsError.swift */,
+				23CD59722C33F4CC00D6A94D /* ExternalPaymentMethod.swift */,
+				23CD59742C33F4E000D6A94D /* Features.swift */,
+				23CD59802C33F90000D6A94D /* IntentWaitStatusResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8341E45C268E65ED007561FF /* PaymentForm */ = {
+			isa = PBXGroup;
+			children = (
+				E8EA45472AB3382B00A22B4B /* Enums */,
+				2329C3542E390C6E00E01247 /* PaymentOptionsModule */,
+				23DC1E902E79F77900B9C8EC /* PaymentCardFormModule */,
+				8341E45D268E65ED007561FF /* configuration */,
+			);
+			path = PaymentForm;
+			sourceTree = "<group>";
+		};
+		8341E45D268E65ED007561FF /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				8341E45E268E65ED007561FF /* PaymentData.swift */,
+				8341E45F268E65ED007561FF /* PaymentDelegate.swift */,
+				8341E460268E65ED007561FF /* PaymentConfiguration.swift */,
+			);
+			path = configuration;
+			sourceTree = "<group>";
+		};
+		ACB27EC35C80F9D1EB2A0DD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83507D3F2525DFDD00637BB6 /* CoreServices.framework */,
+				83507D3B2525DF5300637BB6 /* MobileCoreServices.framework */,
+				83507D392525DF4D00637BB6 /* CoreMedia.framework */,
+				83507D372525DF4300637BB6 /* AudioToolbox.framework */,
+				83507D352525DF3C00637BB6 /* AVFoundation.framework */,
+				83507D332525DF3700637BB6 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E82ECBDF2A79046F001BD54C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E82ECC0D2A790D54001BD54C /* Assets.xcassets */,
+				E82ECBE02A79046F001BD54C /* PublicKey.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E8EA45472AB3382B00A22B4B /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				23CD59702C33F4AE00D6A94D /* CaseOfBank.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		134298D02339F6A7009C744C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		134298D42339F6A7009C744C /* sdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 134298DD2339F6A7009C744C /* Build configuration list for PBXNativeTarget "sdk" */;
+			buildPhases = (
+				134298D02339F6A7009C744C /* Headers */,
+				134298D12339F6A7009C744C /* Sources */,
+				134298D22339F6A7009C744C /* Frameworks */,
+				134298D32339F6A7009C744C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sdk;
+			packageProductDependencies = (
+			);
+			productName = sdk;
+			productReference = 134298D52339F6A7009C744C /* sdk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		134298CC2339F6A7009C744C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = Cloudpayments;
+				TargetAttributes = {
+					134298D42339F6A7009C744C = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1150;
+					};
+				};
+			};
+			buildConfigurationList = 134298CF2339F6A7009C744C /* Build configuration list for PBXProject "sdk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 134298CB2339F6A7009C744C;
+			packageReferences = (
+				E2BADB132FD200000025F06A /* XCLocalSwiftPackageReference ".." */,
+			);
+			productRefGroup = 134298D62339F6A7009C744C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				134298D42339F6A7009C744C /* sdk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		134298D32339F6A7009C744C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E82ECBE32A790470001BD54C /* PublicKey.txt in Resources */,
+				E82ECC0E2A790D54001BD54C /* Assets.xcassets in Resources */,
+				2377BFCB2BF2061A0047C643 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		134298D12339F6A7009C744C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0DE10012F92000100ABCDEF /* YPModels.swift in Sources */,
+				C0DE10032F92000100ABCDEF /* YPAPIClient.swift in Sources */,
+				C0DE10052F92000100ABCDEF /* YPCryptogram.swift in Sources */,
+				C0DE10072F92000100ABCDEF /* YPAltPayFlow.swift in Sources */,
+				C0DE100A2F92000100ABCDEF /* PaymentIntent.swift in Sources */,
+				E86277A02AB1B2C4003F6C59 /* CGFloat+Extensions.swift in Sources */,
+				8341E475268E65EE007561FF /* String+Extensions.swift in Sources */,
+				8341E47A268E65EE007561FF /* RSAUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		134298DB2339F6A7009C744C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BITCODE_GENERATION_MODE = marker;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fembed-bitcode-marker";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		134298DC2339F6A7009C744C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		134298DE2339F6A7009C744C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.1.4;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.cloudpayments.sdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		134298DF2339F6A7009C744C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.1.4;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.cloudpayments.sdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		134298CF2339F6A7009C744C /* Build configuration list for PBXProject "sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134298DB2339F6A7009C744C /* Debug */,
+				134298DC2339F6A7009C744C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		134298DD2339F6A7009C744C /* Build configuration list for PBXNativeTarget "sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134298DE2339F6A7009C744C /* Debug */,
+				134298DF2339F6A7009C744C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		E2BADB132FD200000025F06A /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 134298CC2339F6A7009C744C /* Project object */;
+}

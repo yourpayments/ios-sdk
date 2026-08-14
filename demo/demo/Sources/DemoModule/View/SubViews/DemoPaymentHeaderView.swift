@@ -1,0 +1,17 @@
+import SwiftUI
+
+struct DemoPaymentHeaderView: View {
+    let title: String
+    let amountText: String
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Text(title)
+                .font(.title3.bold())
+            Text(amountText)
+                .font(.headline)
+                .foregroundStyle(.secondary)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+}
