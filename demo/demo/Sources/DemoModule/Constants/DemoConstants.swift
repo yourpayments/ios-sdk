@@ -31,6 +31,10 @@ enum DemoConstants {
         static let currencyDefault = "RUB"
 
         static let useDualMessagePayment = "Use dual message payment"
+        static let tokenize = "Tokenize"
+        static let tokenizeDefault = "Default"
+        static let tokenizeEnabled = "Enabled"
+        static let tokenizeDisabled = "Disabled"
         static let runPayment = "Run payment"
 
         static let optionsMode = "Options"
@@ -43,6 +47,7 @@ enum DemoConstants {
         static let amountField = "demo.amountField"
         static let currencyField = "demo.currencyField"
         static let useDualMessagePaymentToggle = "demo.useDualMessagePaymentToggle"
+        static let tokenizePicker = "demo.tokenizePicker"
         static let runPaymentButton = "demo.runPaymentButton"
     }
 

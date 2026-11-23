@@ -20,6 +20,7 @@ enum YPCryptogram {
     private struct ValuePayload: Encodable {
         let PAN: String
         let cvv: String
+        let uuid: String
     }
 
     private struct CardInfoPayload: Encodable {
@@ -37,7 +38,7 @@ enum YPCryptogram {
         let Value: String
     }
 
-    static func build(publicKeyPem: String, card: CardData) throws -> String {
+    static func build(publicKeyPem: String, card: CardData, intentId: String) throws -> String {
         let pan = card.pan.filter(\.isNumber)
         let cvv = card.cvv.filter(\.isNumber)
         let month = card.expMonth.filter(\.isNumber)
@@ -46,7 +47,7 @@ enum YPCryptogram {
 
         do {
             let encoder = JSONEncoder()
-            let valueData = try encoder.encode(ValuePayload(PAN: pan, cvv: cvv))
+            let valueData = try encoder.encode(ValuePayload(PAN: pan, cvv: cvv, uuid: intentId))
             guard let valueString = String(data: valueData, encoding: .utf8),
                   let encrypted = try RSAUtils.encryptWithRSAPublicKeyNewMethod(str: valueString, pubkeyBase64: publicKeyPem) else {
                 throw YPError(message: "cryptogram: encryption failed")

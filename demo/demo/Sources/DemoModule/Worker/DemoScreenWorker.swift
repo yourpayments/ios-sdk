@@ -20,7 +20,8 @@ final class DemoScreenWorker {
         merchantCode: String,
         amount: String,
         currency: String,
-        useDualMessagePayment: Bool
+        useDualMessagePayment: Bool,
+        tokenize: Bool?
     ) -> DemoScreenStartPayload {
         let fields = [
             DemoPaymentField(.merchantCode, text: merchantCode),
@@ -34,7 +35,8 @@ final class DemoScreenWorker {
             merchantCode: merchantCode,
             amount: amount,
             currency: currency,
-            useDualMessagePayment: useDualMessagePayment
+            useDualMessagePayment: useDualMessagePayment,
+            tokenize: tokenize
         )
     }
 

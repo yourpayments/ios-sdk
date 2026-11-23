@@ -23,7 +23,8 @@ final class DemoCreateIntentRequestFactory {
             merchantCode: merchantCode,
             amount: amount,
             currency: currency,
-            messageScheme: payload.useDualMessagePayment ? "DMS" : "SMS"
+            messageScheme: payload.useDualMessagePayment ? "DMS" : "SMS",
+            tokenize: payload.tokenize
         )
     }
 }

@@ -211,6 +211,7 @@ actor PaymentIntentSession {
 
     private func performPay(input: PayInput) async throws -> PayResult {
         do {
+            let intentId = data.id
             let cryptogram: String
             switch input {
             case .cryptogram(let value):
@@ -223,10 +224,10 @@ actor PaymentIntentSession {
                     key = try await api.getPublicKey()
                     publicKey = key
                 }
-                cryptogram = try YPCryptogram.build(publicKeyPem: key, card: card)
+                cryptogram = try YPCryptogram.build(publicKeyPem: key, card: card, intentId: intentId)
             }
 
-            switch try await api.pay(id: data.id, cryptogram: cryptogram) {
+            switch try await api.pay(id: intentId, cryptogram: cryptogram) {
             case .threeDsRequired(let url):
                 latestStatusResponse = nil
                 return .threeDsRequired(threeDsUrl: url)
