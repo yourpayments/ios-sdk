@@ -41,6 +41,21 @@ struct DemoScreenView: View {
                     .tint(Color(DemoConstants.ColorName.primary))
                     .accessibilityIdentifier(DemoConstants.Accessibility.useDualMessagePaymentToggle)
 
+                VStack(alignment: .leading, spacing: DemoConstants.Layout.fieldSpacing) {
+                    Text(DemoConstants.Text.tokenize)
+
+                    Picker(DemoConstants.Text.tokenize, selection: $viewModel.tokenize) {
+                        Text(DemoConstants.Text.tokenizeDefault)
+                            .tag(nil as Bool?)
+                        Text(DemoConstants.Text.tokenizeEnabled)
+                            .tag(true as Bool?)
+                        Text(DemoConstants.Text.tokenizeDisabled)
+                            .tag(false as Bool?)
+                    }
+                    .pickerStyle(.segmented)
+                    .accessibilityIdentifier(DemoConstants.Accessibility.tokenizePicker)
+                }
+
                 Button(action: viewModel.startButtonTapped) {
                     Text(DemoConstants.Text.runPayment)
                         .font(.headline)

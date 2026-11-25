@@ -8,6 +8,7 @@ final class DemoScreenViewModel: ObservableObject {
     @Published var amount: String
     @Published var currency: String
     @Published var useDualMessagePayment = false
+    @Published var tokenize: Bool?
 
     var onStartRequested: ((DemoScreenStartPayload) -> Void)?
 
@@ -36,6 +37,7 @@ final class DemoScreenViewModel: ObservableObject {
         amount = automationSettings.isEnabled ? (automationSettings.amount ?? fields.amount) : fields.amount
         currency = automationSettings.isEnabled ? (automationSettings.currency ?? fields.currency) : fields.currency
         useDualMessagePayment = automationSettings.isEnabled ? (automationSettings.useDualMessagePayment ?? false) : false
+        tokenize = nil
     }
 
     func startButtonTapped() {
@@ -47,7 +49,8 @@ final class DemoScreenViewModel: ObservableObject {
             merchantCode: merchantCode,
             amount: amount,
             currency: currency,
-            useDualMessagePayment: useDualMessagePayment
+            useDualMessagePayment: useDualMessagePayment,
+            tokenize: tokenize
         )
     }
 }

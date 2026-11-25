@@ -582,7 +582,7 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 1.1.4;
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.cloudpayments.sdk;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -614,7 +614,7 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 1.1.4;
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.cloudpayments.sdk;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

@@ -550,7 +550,7 @@ public struct CardData: CustomStringConvertible, CustomDebugStringConvertible, S
 | `expYear` | `String` | Год окончания срока действия, обычно `YY`. |
 | `cvv` | `String` | CVV/CVC, обычно 3-4 цифры. |
 
-Строковое и debug-представление `CardData` маскирует PAN, срок действия и CVV. Не логируйте PAN, CVV и криптограммы.
+Строковое и debug-представление `CardData` маскирует PAN, срок действия, CVV и ID текущего интента. Не логируйте PAN, CVV, Intent.ID и криптограммы.
 
 ### `PayInput`
 
